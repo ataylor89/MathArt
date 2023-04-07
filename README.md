@@ -1,36 +1,36 @@
-# mathart
+# Professor Turtle
 
-This module uses turtle graphics to draw polygons, circles made from polygons, and spirals.
+This module uses turtle graphics to draw polygons, spirals, and shapes that are made from polygons.
 
 ## Usage
 
-The algorithms in this module can be run inside the interactive Python environment.
+The algorithms in this module can be run with the interactive interpreter.
 
     % python
-    >>> import mathart
-    >>> mathart.hexagon()
-    >>> mathart.clear()
-    >>> mathart.star()
-    >>> mathart.clear()
-    >>> mathart.spiral()
-    >>> mathart.clear()
+    >>> import profturtle
+    >>> profturtle.hexagon()
+    >>> profturtle.clear()
+    >>> profturtle.star()
+    >>> profturtle.clear()
+    >>> profturtle.spiral()
+    >>> profturtle.clear()
 
-The coordinates of the turtle icon can be set and retrieved using the set_coords and get_coords functions.
+Coordinates can be set, and retrieved, using the set_coords and get_coords functions.
 
     % python
-    >>> import mathart
-    >>> mathart.get_coords()
+    >>> import profturtle
+    >>> profturtle.get_coords()
     (0.0, 0.0)
-    >>> mathart.set_coords(-50, -50)
-    >>> mathart.get_coords()
+    >>> profturtle.set_coords(-50, -50)
+    >>> profturtle.get_coords()
     (-50, -50)
 
-The turtle icon can be rotated clockwise or counterclockwise with the rotate function.
+The turtle icon can be rotated using the left function or the right function.
 
     % python
-    >>> import mathart
-    >>> mathart.pentagon(100, 'cw')
-    >>> mathart.pentagon(100, 'ccw')
-    >>> mathart.rotate(180)
-    >>> mathart.pentagon(100, 'cw')
-    >>> mathart.pentagon(100, 'ccw')
+    >>> import profturtle
+    >>> profturtle.pentagon(100, 'left')
+    >>> profturtle.pentagon(100, 'right')
+    >>> profturtle.left(180)
+    >>> profturtle.pentagon(100, 'left')
+    >>> profturtle.pentagon(100, 'right')
