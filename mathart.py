@@ -25,7 +25,7 @@ def draw_hexagon(sidelength=100, direction='cw'):
             turtle.forward(sidelength)
             turtle.left(60)
 
-def draw_hexagon_spiral(sidelength=100, direction='cw'):
+def draw_hexagons(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(72):
             draw_hexagon(sidelength, direction)
@@ -45,7 +45,7 @@ def draw_pentagon(sidelength=100, direction='cw'):
             turtle.forward(sidelength)
             turtle.left(72)
 
-def draw_pentagon_spiral(sidelength=100, direction='cw'):
+def draw_pentagons(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(72):
             draw_pentagon(sidelength, direction)
@@ -65,7 +65,7 @@ def draw_star(sidelength=100, direction='cw'):
             turtle.forward(sidelength)
             turtle.left(144)
 
-def draw_star_spiral(sidelength=100, direction='cw'):
+def draw_stars(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(1, 73):
             draw_star(i*5, direction)
@@ -85,7 +85,7 @@ def draw_square(sidelength=100, direction='cw'):
             turtle.forward(100)
             turtle.left(90)
 
-def draw_square_spiral(sidelength=100, direction='cw'):
+def draw_squares(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(72):
             draw_square(sidelength, direction)
@@ -105,7 +105,7 @@ def draw_triangle(sidelength=100, direction='cw'):
             turtle.forward(sidelength)
             turtle.left(120)
 
-def draw_triangle_spiral(sidelength=100, direction='cw'):
+def draw_triangles(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(72):
             draw_triangle(sidelength, direction)
