@@ -10,9 +10,9 @@ The algorithms in pturtle can be run with the interactive interpreter.
     >>> import pturtle
     >>> pturtle.hexagon()
     >>> pturtle.clear()
-    >>> pturtle.star()
+    >>> pturtle.star(direction='right')
     >>> pturtle.clear()
-    >>> pturtle.spiral()
+    >>> pturtle.hexagon360()
     >>> pturtle.clear()
 
 The coordinates of the turtle icon can be accessed and modified using the get_coords and set_coords functions.
