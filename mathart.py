@@ -67,12 +67,12 @@ def draw_star(sidelength=100, direction='cw'):
 
 def draw_stars(sidelength=100, direction='cw'):
     if direction == 'cw':
-        for i in range(1, 73):
-            draw_star(i*5, direction)
+        for i in range(72):
+            draw_star(sidelength, direction)
             turtle.right(5)
     elif direction == 'ccw':
-        for i in range(1, 73):
-            draw_star(i*5, direction)
+        for i in range(72):
+            draw_star(sidelength, direction)
             turtle.left(5)
 
 def draw_square(sidelength=100, direction='cw'):
