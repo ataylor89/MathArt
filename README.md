@@ -1,8 +1,10 @@
 # MathArt
 
-## Using the module
+This module uses turtle graphics to draw polygons, circles made from polygons, and spirals.
 
-The functions from this module can be run inside the interactive Python environment.
+## Usage
+
+The algorithms in this module can be run inside the interactive Python environment.
 
     % python
     >>> import mathart
