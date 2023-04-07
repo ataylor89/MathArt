@@ -15,8 +15,11 @@ def get_coords():
 def clear():
     turtle.clear()
 
-def rotate(theta):
-    turtle.left(theta)
+def rotate(theta, direction='ccw'):
+    if direction == 'ccw':
+        turtle.left(theta)
+    elif direction == 'cw':
+        turtle.right(theta)
 
 def forward(distance):
     turtle.forward(distance)
