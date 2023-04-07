@@ -8,12 +8,6 @@ The algorithms in this module can be run inside the interactive Python environme
 
     % python
     >>> import mathart
-    >>> mathart.triangle()
-    >>> mathart.clear()
-    >>> mathart.square()
-    >>> mathart.clear()
-    >>> mathart.pentagon()
-    >>> mathart.clear()
     >>> mathart.hexagon()
     >>> mathart.clear()
     >>> mathart.star()
