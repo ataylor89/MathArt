@@ -18,6 +18,12 @@ def clear():
 def rotate(theta):
     turtle.left(theta)
 
+def forward(distance):
+    turtle.forward(distance)
+
+def backward(distance):
+    turtle.backward(distance)
+
 def hexagon(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(6):
@@ -127,3 +133,6 @@ def spiral(direction='cw'):
         for i in range(72):
             triangle(i*5, direction)
             turtle.left(5)
+
+def angle_of_regular_ngon(n):
+    return 180 * (n - 2) / n
