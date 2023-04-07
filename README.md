@@ -4,33 +4,33 @@ This module uses turtle graphics to draw polygons, spirals, and shapes that are 
 
 ## Usage
 
-The algorithms in this module can be run with the interactive interpreter.
+The algorithms in pturtle can be run with the interactive interpreter.
 
     % python
-    >>> import profturtle
-    >>> profturtle.hexagon()
-    >>> profturtle.clear()
-    >>> profturtle.star()
-    >>> profturtle.clear()
-    >>> profturtle.spiral()
-    >>> profturtle.clear()
+    >>> import pturtle
+    >>> pturtle.hexagon()
+    >>> pturtle.clear()
+    >>> pturtle.star()
+    >>> pturtle.clear()
+    >>> pturtle.spiral()
+    >>> pturtle.clear()
 
-Coordinates can be set, and retrieved, using the set_coords and get_coords functions.
+The coordinates of the turtle icon can be set, and accessed, using the set_coords and get_coords functions.
 
     % python
-    >>> import profturtle
-    >>> profturtle.get_coords()
+    >>> import pturtle
+    >>> pturtle.get_coords()
     (0.0, 0.0)
-    >>> profturtle.set_coords(-50, -50)
-    >>> profturtle.get_coords()
+    >>> pturtle.set_coords(-50, -50)
+    >>> pturtle.get_coords()
     (-50, -50)
 
-The turtle icon can be rotated using the left function or the right function.
+The turtle icon can be rotated left or right using the left and right functions.
 
     % python
-    >>> import profturtle
-    >>> profturtle.pentagon(100, 'left')
-    >>> profturtle.pentagon(100, 'right')
-    >>> profturtle.left(180)
-    >>> profturtle.pentagon(100, 'left')
-    >>> profturtle.pentagon(100, 'right')
+    >>> import pturtle
+    >>> pturtle.pentagon(100, 'left')
+    >>> pturtle.pentagon(100, 'right')
+    >>> pturtle.left(180)
+    >>> pturtle.pentagon(100, 'left')
+    >>> pturtle.pentagon(100, 'right')
