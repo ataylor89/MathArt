@@ -21,3 +21,5 @@ The coordinates of the turtle object can be set and retrieved using the set_coor
     >>> mathart.get_coords()
     (0.0, 0.0)
     >>> mathart.set_coords(-50, -50)
+    >>> mathart.get_coords()
+    (-50, -50)
