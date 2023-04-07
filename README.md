@@ -2,7 +2,7 @@
 
 ## Using the module
 
-The functions from this module can be run inside the interactive Python environment
+The functions from this module can be run inside the interactive Python environment.
 
     % python
     >>> import mathart
@@ -13,7 +13,7 @@ The functions from this module can be run inside the interactive Python environm
     >>> mathart.draw_star()
     >>> mathart.clear()
 
-The coordinates of the turtle object can be set and retrieved using the set_coords and get_coords functions
+The coordinates of the turtle icon can be set using set_coords and retrieved using get_coords.
 
     % python
     >>> import mathart
