@@ -27,64 +27,24 @@ def forward(distance):
 def backward(distance):
     turtle.backward(distance)
 
-def hexagon(sidelength=100, direction='ccw'):
+def triangle(sidelength=100, direction='ccw'):
     if direction == 'cw':
-        for i in range(6):
+        for i in range(3):
             turtle.forward(sidelength)
-            turtle.right(60)
+            turtle.right(120)
     elif direction == 'ccw':
-        for i in range(6):
+        for i in range(3):
             turtle.forward(sidelength)
-            turtle.left(60)
+            turtle.left(120)
 
-def hexagons(sidelength=100, direction='ccw'):
+def triangle360(sidelength=100, direction='ccw'):
     if direction == 'cw':
         for i in range(72):
-            hexagon(sidelength, direction)
+            triangle(sidelength, direction)
             turtle.right(5)
     elif direction == 'ccw':
         for i in range(72):
-            hexagon(sidelength, direction)
-            turtle.left(5)
-
-def pentagon(sidelength=100, direction='ccw'):
-    if direction == 'cw':
-        for i in range(5):
-            turtle.forward(sidelength)
-            turtle.right(72)
-    elif direction == 'ccw':
-        for i in range(5):
-            turtle.forward(sidelength)
-            turtle.left(72)
-
-def pentagons(sidelength=100, direction='ccw'):
-    if direction == 'cw':
-        for i in range(72):
-            pentagons(sidelength, direction)
-            turtle.right(5)
-    elif direction == 'ccw':
-        for i in range(72):
-            pentagons(sidelength, direction)
-            turtle.left(5)
-
-def star(sidelength=100, direction='ccw'):
-    if direction == 'cw':
-        for i in range(5):
-            turtle.forward(sidelength)
-            turtle.right(144)
-    elif direction == 'ccw':
-        for i in range(5):
-            turtle.forward(sidelength)
-            turtle.left(144)
-
-def stars(sidelength=100, direction='ccw'):
-    if direction == 'cw':
-        for i in range(72):
-            star(sidelength, direction)
-            turtle.right(5)
-    elif direction == 'ccw':
-        for i in range(72):
-            star(sidelength, direction)
+            triangle(sidelength, direction)
             turtle.left(5)
 
 def square(sidelength=100, direction='ccw'):
@@ -97,7 +57,7 @@ def square(sidelength=100, direction='ccw'):
             turtle.forward(100)
             turtle.left(90)
 
-def squares(sidelength=100, direction='ccw'):
+def square360(sidelength=100, direction='ccw'):
     if direction == 'cw':
         for i in range(72):
             square(sidelength, direction)
@@ -107,24 +67,64 @@ def squares(sidelength=100, direction='ccw'):
             square(sidelength, direction)
             turtle.left(5)
 
-def triangle(sidelength=100, direction='ccw'):
+def pentagon(sidelength=100, direction='ccw'):
     if direction == 'cw':
-        for i in range(3):
+        for i in range(5):
             turtle.forward(sidelength)
-            turtle.right(120)
+            turtle.right(72)
     elif direction == 'ccw':
-        for i in range(3):
+        for i in range(5):
             turtle.forward(sidelength)
-            turtle.left(120)
+            turtle.left(72)
 
-def triangles(sidelength=100, direction='ccw'):
+def pentagon360(sidelength=100, direction='ccw'):
     if direction == 'cw':
         for i in range(72):
-            triangles(sidelength, direction)
+            pentagon(sidelength, direction)
             turtle.right(5)
     elif direction == 'ccw':
         for i in range(72):
-            triangles(sidelength, direction)
+            pentagon(sidelength, direction)
+            turtle.left(5)
+
+def hexagon(sidelength=100, direction='ccw'):
+    if direction == 'cw':
+        for i in range(6):
+            turtle.forward(sidelength)
+            turtle.right(60)
+    elif direction == 'ccw':
+        for i in range(6):
+            turtle.forward(sidelength)
+            turtle.left(60)
+
+def hexagon360(sidelength=100, direction='ccw'):
+    if direction == 'cw':
+        for i in range(72):
+            hexagon(sidelength, direction)
+            turtle.right(5)
+    elif direction == 'ccw':
+        for i in range(72):
+            hexagon(sidelength, direction)
+            turtle.left(5)
+
+def star(sidelength=100, direction='ccw'):
+    if direction == 'cw':
+        for i in range(5):
+            turtle.forward(sidelength)
+            turtle.right(144)
+    elif direction == 'ccw':
+        for i in range(5):
+            turtle.forward(sidelength)
+            turtle.left(144)
+
+def star360(sidelength=100, direction='ccw'):
+    if direction == 'cw':
+        for i in range(72):
+            star(sidelength, direction)
+            turtle.right(5)
+    elif direction == 'ccw':
+        for i in range(72):
+            star(sidelength, direction)
             turtle.left(5)
 
 def spiral(direction='ccw'):
