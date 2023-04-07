@@ -15,7 +15,7 @@ The algorithms in this module can be run inside the interactive Python environme
     >>> mathart.spiral()
     >>> mathart.clear()
 
-The coordinates of the turtle icon can be set using set_coords and retrieved using get_coords.
+The coordinates of the turtle icon can be set and retrieved using the set_coords and get_coords functions.
 
     % python
     >>> import mathart
@@ -24,3 +24,13 @@ The coordinates of the turtle icon can be set using set_coords and retrieved usi
     >>> mathart.set_coords(-50, -50)
     >>> mathart.get_coords()
     (-50, -50)
+
+The turtle icon can be rotated clockwise or counterclockwise with the rotate function.
+
+    % python
+    >>> import mathart
+    >>> mathart.pentagon(100, 'cw')
+    >>> mathart.pentagon(100, 'ccw')
+    >>> mathart.rotate(180)
+    >>> mathart.pentagon(100, 'cw')
+    >>> mathart.pentagon(100, 'ccw')
