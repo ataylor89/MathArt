@@ -1,4 +1,4 @@
-# MathArt
+# mathart
 
 This module uses turtle graphics to draw polygons, circles made from polygons, and spirals.
 
