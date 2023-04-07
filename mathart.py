@@ -15,7 +15,10 @@ def get_coords():
 def clear():
     turtle.clear()
 
-def draw_hexagon(sidelength=100, direction='cw'):
+def rotate(theta):
+    turtle.left(theta)
+
+def hexagon(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(6):
             turtle.forward(sidelength)
@@ -25,17 +28,17 @@ def draw_hexagon(sidelength=100, direction='cw'):
             turtle.forward(sidelength)
             turtle.left(60)
 
-def draw_hexagons(sidelength=100, direction='cw'):
+def hexagons(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(72):
-            draw_hexagon(sidelength, direction)
+            hexagon(sidelength, direction)
             turtle.right(5)
     elif direction == 'ccw':
         for i in range(72):
-            draw_hexagon(sidelength, direction)
+            hexagon(sidelength, direction)
             turtle.left(5)
 
-def draw_pentagon(sidelength=100, direction='cw'):
+def pentagon(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(5):
             turtle.forward(sidelength)
@@ -45,17 +48,17 @@ def draw_pentagon(sidelength=100, direction='cw'):
             turtle.forward(sidelength)
             turtle.left(72)
 
-def draw_pentagons(sidelength=100, direction='cw'):
+def pentagons(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(72):
-            draw_pentagon(sidelength, direction)
+            pentagons(sidelength, direction)
             turtle.right(5)
     elif direction == 'ccw':
         for i in range(72):
-            draw_pentagon(sidelength, direction)
+            pentagons(sidelength, direction)
             turtle.left(5)
 
-def draw_star(sidelength=100, direction='cw'):
+def star(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(5):
             turtle.forward(sidelength)
@@ -65,17 +68,17 @@ def draw_star(sidelength=100, direction='cw'):
             turtle.forward(sidelength)
             turtle.left(144)
 
-def draw_stars(sidelength=100, direction='cw'):
+def stars(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(72):
-            draw_star(sidelength, direction)
+            star(sidelength, direction)
             turtle.right(5)
     elif direction == 'ccw':
         for i in range(72):
-            draw_star(sidelength, direction)
+            star(sidelength, direction)
             turtle.left(5)
 
-def draw_square(sidelength=100, direction='cw'):
+def square(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(4):
             turtle.forward(100)
@@ -85,17 +88,17 @@ def draw_square(sidelength=100, direction='cw'):
             turtle.forward(100)
             turtle.left(90)
 
-def draw_squares(sidelength=100, direction='cw'):
+def squares(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(72):
-            draw_square(sidelength, direction)
+            square(sidelength, direction)
             turtle.right(5)
     elif direction == 'ccw':
         for i in range(72):
-            draw_square(sidelength, direction)
+            square(sidelength, direction)
             turtle.left(5)
 
-def draw_triangle(sidelength=100, direction='cw'):
+def triangle(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(3):
             turtle.forward(sidelength)
@@ -105,12 +108,22 @@ def draw_triangle(sidelength=100, direction='cw'):
             turtle.forward(sidelength)
             turtle.left(120)
 
-def draw_triangles(sidelength=100, direction='cw'):
+def triangles(sidelength=100, direction='cw'):
     if direction == 'cw':
         for i in range(72):
-            draw_triangle(sidelength, direction)
+            triangles(sidelength, direction)
             turtle.right(5)
     elif direction == 'ccw':
         for i in range(72):
-            draw_triangle(sidelength, direction)
+            triangles(sidelength, direction)
+            turtle.left(5)
+
+def spiral(direction='cw'):
+    if direction == 'cw':
+        for i in range(72):
+            triangle(i*5, direction)
+            turtle.right(5)
+    elif direction == 'ccw':
+        for i in range(72):
+            triangle(i*5, direction)
             turtle.left(5)

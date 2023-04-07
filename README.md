@@ -8,11 +8,17 @@ The algorithms in this module can be run inside the interactive Python environme
 
     % python
     >>> import mathart
-    >>> mathart.draw_pentagon()
+    >>> mathart.triangle()
     >>> mathart.clear()
-    >>> mathart.draw_hexagon()
+    >>> mathart.square()
     >>> mathart.clear()
-    >>> mathart.draw_star()
+    >>> mathart.pentagon()
+    >>> mathart.clear()
+    >>> mathart.hexagon()
+    >>> mathart.clear()
+    >>> mathart.star()
+    >>> mathart.clear()
+    >>> mathart.spiral()
     >>> mathart.clear()
 
 The coordinates of the turtle icon can be set using set_coords and retrieved using get_coords.
