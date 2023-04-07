@@ -15,7 +15,7 @@ The algorithms in pturtle can be run with the interactive interpreter.
     >>> pturtle.spiral()
     >>> pturtle.clear()
 
-The coordinates of the turtle icon can be set, and obtained, using the set_coords and get_coords functions.
+The coordinates of the turtle icon can be accessed and modified using the get_coords and set_coords functions.
 
     % python
     >>> import pturtle
@@ -25,7 +25,7 @@ The coordinates of the turtle icon can be set, and obtained, using the set_coord
     >>> pturtle.get_coords()
     (-50, -50)
 
-The turtle icon can be rotated left or right using the left and right functions.
+The turtle icon can be rorated a number of degrees using the left function or the right function.
 
     % python
     >>> import pturtle
