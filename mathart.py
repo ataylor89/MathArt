@@ -105,7 +105,7 @@ def draw_triangle(sidelength=100, direction='cw'):
             turtle.forward(sidelength)
             turtle.left(120)
 
-def triangle_spiral(sidelength=100, direction='cw'):
+def draw_triangle_spiral(sidelength=100, direction='cw'):
 	if direction == 'cw':
 		for i in range(72):
 			draw_triangle(sidelength, direction)
