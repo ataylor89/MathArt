@@ -3,11 +3,11 @@ import turtle
 turtle.shape('turtle')
 
 def set_coords(x, y):
-	turtle.hideturtle()
-	turtle.penup()
-	turtle.goto(x, y)
-	turtle.pendown()
-	turtle.showturtle()
+    turtle.hideturtle()
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.showturtle()
 
 def get_coords():
     return (turtle.xcor(), turtle.ycor())
@@ -46,14 +46,14 @@ def draw_pentagon(sidelength=100, direction='cw'):
             turtle.left(72)
 
 def draw_pentagon_spiral(sidelength=100, direction='cw'):
-	if direction == 'cw':
-		for i in range(72):
-			draw_pentagon(sidelength, direction)
-			turtle.right(5)
-	elif direction == 'ccw':
-		for i in range(72):
-			draw_pentagon(sidelength, direction)
-			turtle.left(5)
+    if direction == 'cw':
+        for i in range(72):
+            draw_pentagon(sidelength, direction)
+            turtle.right(5)
+    elif direction == 'ccw':
+        for i in range(72):
+            draw_pentagon(sidelength, direction)
+            turtle.left(5)
 
 def draw_star(sidelength=100, direction='cw'):
     if direction == 'cw':
@@ -66,34 +66,34 @@ def draw_star(sidelength=100, direction='cw'):
             turtle.left(144)
 
 def draw_star_spiral(sidelength=100, direction='cw'):
-	if direction == 'cw':
-		for i in range(1,73):
-			draw_star(i*5, direction)
-			turtle.right(5)
-	elif direction == 'ccw':
-		for i in range(1,73):
-			draw_star(i*5, direction)
-			turtle.left(5)
+    if direction == 'cw':
+        for i in range(1, 73):
+            draw_star(i*5, direction)
+            turtle.right(5)
+    elif direction == 'ccw':
+        for i in range(1, 73):
+            draw_star(i*5, direction)
+            turtle.left(5)
 
 def draw_square(sidelength=100, direction='cw'):
-	if direction == 'cw':
-		for i in range(4):
-			turtle.forward(100)
-			turtle.right(90)
-	elif direction == 'ccw':
-		for i in range(4):
-			turtle.forward(100)
-			turtle.left(90)
+    if direction == 'cw':
+        for i in range(4):
+            turtle.forward(100)
+            turtle.right(90)
+    elif direction == 'ccw':
+        for i in range(4):
+            turtle.forward(100)
+            turtle.left(90)
 
 def draw_square_spiral(sidelength=100, direction='cw'):
-	if direction == 'cw':
-		for i in range(72):
-			draw_square(sidelength, direction)
-			turtle.right(5)
-	elif direction == 'ccw':
-		for i in range(72):
-			draw_square(sidelength, direction)
-			turtle.left(5) 
+    if direction == 'cw':
+        for i in range(72):
+            draw_square(sidelength, direction)
+            turtle.right(5)
+    elif direction == 'ccw':
+        for i in range(72):
+            draw_square(sidelength, direction)
+            turtle.left(5)
 
 def draw_triangle(sidelength=100, direction='cw'):
     if direction == 'cw':
@@ -106,11 +106,11 @@ def draw_triangle(sidelength=100, direction='cw'):
             turtle.left(120)
 
 def draw_triangle_spiral(sidelength=100, direction='cw'):
-	if direction == 'cw':
-		for i in range(72):
-			draw_triangle(sidelength, direction)
-			turtle.right(5)
-	elif direction == 'ccw':
-		for i in range(72):
-			draw_triangle(sidelength, direction)
-			turtle.left(5)
+    if direction == 'cw':
+        for i in range(72):
+            draw_triangle(sidelength, direction)
+            turtle.right(5)
+    elif direction == 'ccw':
+        for i in range(72):
+            draw_triangle(sidelength, direction)
+            turtle.left(5)
