@@ -107,7 +107,7 @@ def hexagon360(sidelength=100, direction='left'):
             hexagon(sidelength, direction)
             turtle.right(5)
 
-def star(sidelength=100, direction='left'):
+def star(sidelength=100, direction='right'):
     if direction == 'left':
         for i in range(5):
             turtle.forward(sidelength)
@@ -117,7 +117,7 @@ def star(sidelength=100, direction='left'):
             turtle.forward(sidelength)
             turtle.right(144)
 
-def star360(sidelength=100, direction='left'):
+def star360(sidelength=100, direction='right'):
     if direction == 'left':
         for i in range(72):
             star(sidelength, direction)

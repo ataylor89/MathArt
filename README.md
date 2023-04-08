@@ -10,7 +10,7 @@ The algorithms in pturtle can be run with the interactive interpreter.
     >>> import pturtle
     >>> pturtle.hexagon()
     >>> pturtle.clear()
-    >>> pturtle.star(direction='right')
+    >>> pturtle.star()
     >>> pturtle.clear()
     >>> pturtle.hexagon360()
     >>> pturtle.clear()
