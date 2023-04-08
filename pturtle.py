@@ -27,6 +27,9 @@ def forward(distance):
 def backward(distance):
     turtle.backward(distance)
 
+def color(value):
+    turtle.color(value)
+
 def triangle(sidelength=100, direction='left'):
     if direction == 'left':
         for i in range(3):
