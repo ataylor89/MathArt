@@ -1,6 +1,7 @@
 import turtle
 
-turtle.shape('turtle')
+def shape(value):
+    turtle.shape(value)
 
 def set_coords(x, y):
     turtle.hideturtle()

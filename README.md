@@ -8,6 +8,7 @@ The algorithms in pturtle can be run with the interactive interpreter.
 
     % python
     >>> import pturtle
+    >>> pturtle.shape('turtle')
     >>> pturtle.hexagon()
     >>> pturtle.clear()
     >>> pturtle.star()
@@ -19,6 +20,7 @@ The coordinates of the turtle icon can be accessed and modified using the get_co
 
     % python
     >>> import pturtle
+    >>> pturtle.shape('turtle')
     >>> pturtle.get_coords()
     (0.0, 0.0)
     >>> pturtle.set_coords(-50, -50)
@@ -29,8 +31,19 @@ The turtle icon can be rorated a number of degrees using the left function or th
 
     % python
     >>> import pturtle
+    >>> pturtle.shape('turtle')
     >>> pturtle.pentagon(100, 'left')
     >>> pturtle.pentagon(100, 'right')
     >>> pturtle.left(180)
     >>> pturtle.pentagon(100, 'left')
     >>> pturtle.pentagon(100, 'right')
+
+The color can be changed using the color function.
+
+    % python
+    >>> import pturtle
+    >>> pturtle.shape('turtle')
+    >>> pturtle.color('blue')
+    >>> for i in range(4):
+    ...     pturtle.star(100 + i * 50)
+    ...
